@@ -22,7 +22,7 @@ resource "aws_security_group" "ec2_sg" {
 }
 
 resource "aws_instance" "ec2_instance" {
-  ami             = "ami-0c55b159cbfafe1f0" # Update this with the correct AMI ID for your region
+  ami             = "ami-08b5b3a93ed654d19" # Update this with the correct AMI ID for your region
   instance_type   = "t2.micro"
   security_groups = [aws_security_group.ec2_sg.name]
 
