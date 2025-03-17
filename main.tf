@@ -1,6 +1,6 @@
-#provider "aws" {
- # region = "us-east-1" # Change this to your preferred region
-#}
+provider "aws" {
+  region = "us-east-1" # Change this to your preferred region
+}
 
 resource "aws_security_group" "ec2_sg" {
   name        = "ec2-security-group"
